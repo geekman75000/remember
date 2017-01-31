@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { Event } from './event';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!!!!';
+
+  event:Event = {id: 1, title: 'My 1st event', createdAt: '2017-02-01'};
 }
